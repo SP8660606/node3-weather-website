@@ -9,6 +9,7 @@ const viewsPath=path.join(__dirname,'../templates/views')
 const partialsPath=path.join(__dirname,'../templates/partials')
 const geocode=require('../src/utlis/geocode')
 const forecast=require('../src/utlis/forecast')
+const port=process.env.PORT || 3000
 // const utlis=path.join(__dirname,'../utlis')
 //console.log(utlis)
 
@@ -89,7 +90,8 @@ app.get('*',(req,res)=>{
 })
 
 
-app.listen(3000,()=>{
-    console.log('Server is running')
+app.listen(port,()=>{
+    console.log('Server is running at port ' +port)
 //})
+
 })
