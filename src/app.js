@@ -24,7 +24,7 @@ app.use(express.static(publicDirectoryPath))
 // app.use(express.static(utlis))
 
 
-// console.log(__dirname)
+
 //  console.log(publicDirectoryPath)
 // console.log(viewsPath)
 //  console.log(path.join(__dirname, '../public'))
