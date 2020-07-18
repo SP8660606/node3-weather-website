@@ -10,7 +10,8 @@ const forecast=(latitute,longitude,callback)=>{
             callback('Coordinates Error',undefined)
         }
         else{
-            callback(undefined,'Sky is '+body.current.weather_descriptions[0]+'.' +'It is currently ' +body.current.temperature +' degree  but feels like '+body.current.feelslike +' degrees out')
+            console.log(body)
+            callback(undefined,'Sky is '+body.current.weather_descriptions[0]+'.' +'It is currently ' +body.current.temperature +' degree  but feels like '+body.current.feelslike +' degrees out.The humidity is '+body.current.humidity+'%')
         }
     })
 }
